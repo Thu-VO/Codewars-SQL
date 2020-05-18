@@ -1,0 +1,7 @@
+SELECT d.id, d.name
+FROM departments AS d
+WHERE EXISTS 
+  (SELECT * 
+   FROM sales AS s
+   WHERE d.id = s.department_id 
+   AND s.price > 98)
