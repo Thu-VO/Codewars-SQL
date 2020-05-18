@@ -1,0 +1,7 @@
+SELECT MOD(number1, number2) 
+FROM decimals;
+
+---------------
+
+SELECT number1 % number2 AS MOD 
+FROM decimals;
