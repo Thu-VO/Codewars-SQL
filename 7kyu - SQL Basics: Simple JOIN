@@ -1,0 +1,17 @@
+SELECT p.id, p.name, p.isbn, p.company_id, p.price, c.name AS company_name
+FROM products AS p
+INNER JOIN companies AS c
+ON p.company_id = c.id;
+
+---------------
+
+SELECT 
+  p.id, 
+  p.name, 
+  p.isbn, 
+  p.company_id, 
+  p.price, 
+  c.name AS company_name
+FROM products AS p
+INNER JOIN companies AS c 
+  ON p.company_id = c.id;
