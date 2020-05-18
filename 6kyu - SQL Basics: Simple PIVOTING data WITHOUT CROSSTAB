@@ -1,0 +1,9 @@
+SELECT 
+  p.name,
+  SUM(CASE WHEN d.detail = 'good' THEN 1 ELSE 0 END) AS good,
+  SUM(CASE WHEN d.detail = 'ok' THEN 1 ELSE 0 END) AS ok,
+  SUM(CASE WHEN d.detail = 'bad' THEN 1 ELSE 0 END) AS bad
+FROM products AS p
+LEFT JOIN details AS d ON d.product_id = p.id
+GROUP BY p.name
+ORDER BY name
