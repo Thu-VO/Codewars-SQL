@@ -1,0 +1,12 @@
+SELECT (prefix || ' ' || first || ' ' || last || ' ' || suffix) AS title 
+FROM names;
+
+------------
+
+SELECT CONCAT(Prefix, ' ', First, ' ', Last, ' ', Suffix) as title 
+FROM names;
+
+-------------
+
+SELECT  CONCAT(prefix ||' '|| first||' '||last||' '|| suffix) AS title
+FROM names;
