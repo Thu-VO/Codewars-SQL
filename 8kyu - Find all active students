@@ -1,1 +1,7 @@
-SELECT * FROM students WHERE IsActive;
+SELECT * FROM students 
+WHERE IsActive;
+
+-------------
+
+SELECT * FROM students
+WHERE IsActive == 1
