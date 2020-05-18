@@ -1,0 +1,11 @@
+CREATE FUNCTION increment(value integer) RETURNS integer AS $$
+BEGIN
+  RETURN value + 1;
+END;
+$$ LANGUAGE plpgsql;
+
+------------------
+
+CREATE FUNCTION increment (IN age integer, OUT integer) 
+AS 'SELECT age + 1'
+LANGUAGE SQL;
