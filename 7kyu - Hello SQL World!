@@ -1,0 +1,8 @@
+SELECT 'hello world!' as "Greeting";
+
+-------------
+
+CREATE TABLE words(Greeting varchar(255));
+INSERT INTO words(Greeting) 
+  VALUES ('hello world!');
+SELECT * FROM words;
