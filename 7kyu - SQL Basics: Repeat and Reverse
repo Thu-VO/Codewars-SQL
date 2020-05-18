@@ -1,0 +1,12 @@
+SELECT 
+  REPEAT(name, 3) AS name, 
+  REVERSE(characteristics) AS characteristics 
+FROM monsters;
+
+----------------
+
+UPDATE monsters
+  SET name = CONCAT(name, name, name);
+UPDATE monsters
+  SET characteristics = REVERSE(characteristics);
+SELECT name, characteristics FROM monsters;
