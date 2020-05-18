@@ -1,0 +1,9 @@
+SELECT name, age 
+FROM users
+WHERE age >= 18;
+
+-------------
+
+SELECT u.name, u.age 
+FROM users as u
+WHERE age >= 18
