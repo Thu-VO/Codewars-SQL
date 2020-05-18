@@ -1,0 +1,9 @@
+SELECT 
+  s.transaction_date::date AS day,
+  d.name::text AS department,
+  COUNT(s.id)::INT AS sale_count
+FROM department AS d
+  JOIN sale AS s 
+  ON d.id = s.department_id
+GROUP BY day, department
+ORDER BY day;
