@@ -1,0 +1,9 @@
+INSERT INTO participants (name, age, attending)
+VALUES ('Pigeon', 35, true);
+SELECT * FROM participants;
+
+-------------
+
+INSERT INTO participants ("name", "age", "attending")
+VALUES ('Pigeon', 35, true);
+SELECT * FROM participants;
