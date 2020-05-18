@@ -1,0 +1,7 @@
+SELECT id, name, birthday, LOWER(race) AS race 
+FROM demographics;
+
+----------
+
+UPDATE demographics SET race = LOWER(race);
+SELECT * FROM demographics;
