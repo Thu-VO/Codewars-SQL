@@ -1,0 +1,6 @@
+SELECT 
+  d.race, 
+  COUNT(d.race) AS count
+FROM demographics AS d
+GROUP BY d.race
+ORDER BY count DESC;
