@@ -6,4 +6,4 @@ SELECT
 FROM products AS p
 LEFT JOIN details AS d ON d.product_id = p.id
 GROUP BY p.name
-ORDER BY name
+ORDER BY p.name
